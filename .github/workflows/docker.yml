@@ -15,5 +15,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: thomasfaure05/tp-devops
+          repository: thomasfaure05/tp-devops:latest
           tag_with_ref: true

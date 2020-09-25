@@ -1,0 +1,13 @@
+name: Publish Docker image
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Docker build
+      - uses: actions/checkout@v2
+        run:
+          docket build ./ -t thomasfaure05/tp-devops
+

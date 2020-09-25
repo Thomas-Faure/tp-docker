@@ -25,4 +25,4 @@ jobs:
           tag_with_ref: true
         env:
           POSTGRES_HOST: postgres
-          POSTGRES_PORT: 5432:  
+          POSTGRES_PORT: 5432

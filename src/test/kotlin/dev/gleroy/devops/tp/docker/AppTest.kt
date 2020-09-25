@@ -21,7 +21,7 @@ class AppTest {
             response.content.shouldNotBeNull()
            
             
-            mapper.readValue<StatusDto>(response.content!!) shouldBe StatusDto("down")
+            mapper.readValue<StatusDto>(response.content!!) shouldBe StatusDto("up")
         }
     }
 }

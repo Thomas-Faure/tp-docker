@@ -11,7 +11,7 @@ services:
       - "5432:5432"
    tpdevops:
     container_name: tp_devops_gradle
-    image: thomasfaure05/tp-devops
+    image: tp-devops
     environment:
       dbUrl: postgres/tp_devops
       dbPassword: tp_devops

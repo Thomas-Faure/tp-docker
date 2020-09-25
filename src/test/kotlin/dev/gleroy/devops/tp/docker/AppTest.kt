@@ -19,7 +19,9 @@ class AppTest {
         with(handleRequest(HttpMethod.Get, "/")) {
             response.status() shouldBe HttpStatusCode.OK
             response.content.shouldNotBeNull()
-            mapper.readValue<StatusDto>(response.content!!) shouldBe StatusDto("up")
+           
+            
+            mapper.readValue<StatusDto>(response.content!!) shouldBe StatusDto("down")
         }
     }
 }

@@ -1,0 +1,20 @@
+# docker-compose.yml
+version: '3'
+services:
+   postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: tp_devops
+      POSTGRES_PASSWORD: tp_devops
+    ports:
+      - "5432:5432"
+   tpdevops:
+    container_name: tp_devops_gradle
+    image: thomasfaure05/tp-devops
+    environment:
+      dbUrl: postgres/tp_devops
+      dbPassword: tp_devops
+      dbUser: tp_devops
+    ports:
+      - "8080:8080"

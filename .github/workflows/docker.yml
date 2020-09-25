@@ -24,5 +24,7 @@ jobs:
           repository: thomasfaure05/tp-devops
           tag_with_ref: true
         env:
-          POSTGRES_HOST: postgres
+          POSTGRES_HOST: 127.0.0.1
           POSTGRES_PORT: 5432
+          POSTGRES_USER: tp_devops
+          POSTGRES_PASSWORD: tp_devops

@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Docker build
       - uses: actions/checkout@v2
+      - name: Docker build
         run:
           docket build ./ -t thomasfaure05/tp-devops
 

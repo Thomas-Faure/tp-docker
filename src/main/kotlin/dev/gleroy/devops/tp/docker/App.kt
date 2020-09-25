@@ -31,7 +31,6 @@ fun Application.module() {
     routing {
         get {
             val dbUrl = System.getProperty("database.url")
-            
             val dbUsername = System.getProperty("database.username")
             val dbPassword = System.getProperty("database.password")
             try {
